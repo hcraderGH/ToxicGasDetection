@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gas_title_text_size">16sp</dimen>
+    <dimen name="value_text_size">14sp</dimen>
+    <dimen name="attribute_text_size">16sp</dimen>
+    <dimen name="attribute_margin_left">10dp</dimen>
+</resources>

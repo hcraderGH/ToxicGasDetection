@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.devcheng.toxicgasdetection.MainActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+        </com.baidu.mapapi.map.MapView>
+
+        <Button
+            android:id="@+id/btn_model"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:button="@null"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_model_normal"/>
+
+        <CheckBox
+            android:button="@null"
+            android:id="@+id/cb_satellite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:checked="false"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="false"
+            android:clickable="true"
+            android:background="@drawable/selector_satellite"
+            android:contentDescription="@null"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="32dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:background="#0F000000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <include layout="@layout/gas_layout"/>
+
+</LinearLayout>
